@@ -270,5 +270,8 @@ body {
         width: 445px;
       }
     }
+    .pic:hover {
+      transform: scale(1.01);
+    }
   }
 }
