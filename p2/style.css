@@ -15,14 +15,15 @@
   
   .left{
     background-color: aquamarine;
-    margin: 10px;
+    margin: 12px;
   }
   .middle{
-    background-color: bisque;
-    margin: 10px;
+    background-image: url(https://i.pinimg.com/originals/45/f2/9a/45f29a837fac53339b07f15b903e8e13.jpg);
+    background-size: cover;
+    margin: 12px;
   }
   .right{
     background-color: cadetblue;
-    margin: 10px;
+    margin: 12px;
   }
 }
