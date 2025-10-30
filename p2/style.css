@@ -1,28 +1,106 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-  body {
+body {
   height: 100%;
   width: 100%;
-  background-color: rgb(255, 255, 192);
 }
-.hero{
+.hero {
   height: 100vh;
   display: grid;
   grid-template-columns: 1.2fr 1fr 1.2fr;
-  
-  .left{
-    background-color: aquamarine;
+
+  .left {
     margin: 12px;
+    display: flex;
+    flex-direction: column;
+    .logo {
+      display: flex;
+      flex-direction: row;
+      gap: 4px;
+      margin: 10px 10px 10px 10px;
+      ion-icon {
+        font-size: 20px;
+        text-align: center;
+        padding-top: 2px;
+      }
+      h3 {
+        font-family: "Poppins";
+        text-align: center;
+      }
+    }
+    img {
+      height: 50px;
+      width: 130px;
+      top: 20px;
+      left: 20px;
+    }
+    .title {
+      display: flex;
+      flex-direction: row;
+      gap: 0px;
+      margin: 50px 0px 0px 25px;
+
+      h1 {
+        font-family: "Montserrat", fantasy;
+        font-size: 5rem;
+      }
+    }
+    p {
+      font-family: "Montserrat";
+      word-spacing: 0px;
+      margin: 13px 0px 0px 30px;
+    }
+    button {
+      display: flex;
+      flex-direction: row;
+      background-color: black;
+      color: white;
+      justify-content: center;
+      height: 50px;
+      width: 200px;
+      font-size: medium;
+      text-align: center;
+      align-items: center;
+      margin: 18px 0px 0px 30px;
+      border-radius: 25px;
+    }
+    .lower {
+      display: flex;
+      flex-direction: column;
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      margin: 90px 0px 0px 35px;
+
+      h2 {
+        font-size: 35px;
+      }
+      p {
+        font-size: 12px;
+        margin-left: 0px;
+      }
+      .pic {
+        margin: 10px;
+        img {
+          height: 40px;
+          width: 40px;
+          border-radius: 50%;
+          gap: 0px;
+          object-fit: cover;
+          margin-left: -10px;
+          border: 2px solid white;
+        }
+      }
+    }
   }
-  .middle{
+  .middle {
     background-image: url(https://i.pinimg.com/originals/45/f2/9a/45f29a837fac53339b07f15b903e8e13.jpg);
     background-size: cover;
     margin: 12px;
   }
-  .right{
+  .right {
     background-color: cadetblue;
     margin: 12px;
   }
