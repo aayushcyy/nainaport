@@ -1,3 +1,28 @@
-body {
-  background-color: pink;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+  body {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(255, 255, 192);
+}
+.hero{
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1.2fr;
+  
+  .left{
+    background-color: aquamarine;
+    margin: 10px;
+  }
+  .middle{
+    background-color: bisque;
+    margin: 10px;
+  }
+  .right{
+    background-color: cadetblue;
+    margin: 10px;
+  }
 }
