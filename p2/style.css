@@ -47,25 +47,34 @@ body {
         font-family: "Montserrat", fantasy;
         font-size: 5rem;
       }
+      ion-icon {
+        font-size: 30px;
+      }
     }
     p {
       font-family: "Montserrat";
       word-spacing: 0px;
-      margin: 13px 0px 0px 30px;
+      margin: 13px 0px 15px 30px;
     }
-    button {
+    .button {
       display: flex;
       flex-direction: row;
       background-color: black;
       color: white;
-      justify-content: center;
       height: 50px;
-      width: 200px;
+      width: 220px;
       font-size: medium;
-      text-align: center;
-      align-items: center;
-      margin: 18px 0px 0px 30px;
       border-radius: 25px;
+      margin-left: 30px;
+      justify-content: center;
+      align-items: center;
+      gap: 7px;
+      p {
+        margin: -5px 0px 0px 10px;
+      }
+      ion-icon {
+        font-size: 20px;
+      }
     }
     .lower {
       display: flex;
@@ -89,7 +98,7 @@ body {
           border-radius: 50%;
           gap: 0px;
           object-fit: cover;
-          margin-left: -10px;
+          margin-left: -15px;
           border: 2px solid white;
         }
       }
@@ -101,7 +110,97 @@ body {
     margin: 12px;
   }
   .right {
-    background-color: cadetblue;
-    margin: 12px;
+    margin: 12px 40px 12px 50px;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1.5fr;
+    font-family: "Montserrat";
+
+    .up {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin: 10px;
+      .nav {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        align-items: top;
+        margin-top: 10px;
+        ion-icon {
+          font-size: 17px;
+        }
+        button {
+          height: 40px;
+          width: 150px;
+          background-color: black;
+          color: white;
+          font-size: medium;
+          border-radius: 25px;
+          margin-top: -11px;
+        }
+      }
+    } /*<img src="https://www.boredpanda.com/blog/wp-content/uploads/2023/08/7-64df13f49da84__700.jpg" alt="">
+            <img src="" alt="">*/
+    .center {
+      color: rgb(66, 66, 66);
+      .center-1 {
+        display: flex;
+        flex-direction: row;
+        gap: 2px;
+        font-size: smaller;
+        p {
+          font-size: small;
+          margin-left: 5px;
+        }
+      }
+      p {
+        font-size: small;
+        font-weight: 500;
+      }
+      .center-3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 160px;
+        margin: 16px 0px;
+
+        .img-1 {
+          background-image: url(https://st.hzcdn.com/simgs/pictures/house-exteriors/fiskavaig-isle-of-skye-house-build-rk-joinery-img~fcf11a2a0880cf9d_4-6347-1-57343d3.jpg);
+          background-size: cover;
+        }
+        .img-2 {
+          background-image: url(https://i.pinimg.com/736x/7f/3a/49/7f3a49d0a3807719425afa2a2219f2e2.jpg);
+          background-size: cover;
+          margin-left: 10px;
+        }
+      }
+      .center-4 {
+        font-size: 20px;
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        h5 {
+          font-weight: 400;
+          margin-left: 5px;
+        }
+      }
+    }
+    .down {
+      font-family: "Montserrat";
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      margin-bottom: 15px;
+
+      .p1 {
+        font-size: 2.4rem;
+        border-bottom: 2px dashed rgb(72, 72, 72);
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+      }
+      .p2 {
+        font-size: 1rem;
+        color: rgb(66, 66, 66);
+      }
+    }
   }
 }
